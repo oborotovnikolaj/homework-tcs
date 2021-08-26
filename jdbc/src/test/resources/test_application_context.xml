@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="application.properties"/>
+
+    <bean id="dataSourceForBaseInit" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="username" value="${dataSource.username}"/>
+        <property name="password" value="${dataSource.password}"/>
+        <property name="jdbcUrl" value="${dataSource.jdbcUrl}"/>
+        <property name="driverClassName" value="${dataSource.driverClassName}"/>
+    </bean>
+
+    <bean id="myLiquidBase" class="liquibase.integration.spring.SpringLiquibase">
+        <property name="changeLog" value="classpath:liquibase-changeLog.xml"/>
+        <property name="dataSource" ref="dataSourceForBaseInit"/>
+        <property name="shouldRun" value="true"/>
+    </bean>
+
+</beans>

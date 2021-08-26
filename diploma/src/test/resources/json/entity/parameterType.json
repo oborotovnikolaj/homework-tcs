@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "createdDate": {
+    "epochSecond": 1620643138,
+    "nano": 748000000
+  },
+  "lastModifiedDate": {
+    "epochSecond": 1620643138,
+    "nano": 748000000
+  },
+  "version": 0,
+  "name": "weight"
+}

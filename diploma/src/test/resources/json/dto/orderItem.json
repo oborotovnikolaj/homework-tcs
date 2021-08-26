@@ -1,0 +1,58 @@
+{
+  "client": {
+    "id": 1,
+    "phone": "+7 999 999 99 99",
+    "region": "Springfield"
+  },
+  "currency": {
+    "id": 1,
+    "name": "rubles",
+    "multiplier": 10
+  },
+  "orderItems": [
+    {
+      "id": 1,
+      "productDto": {
+        "id": 1,
+        "infos": [
+          {
+            "id": 1,
+            "tittle": "table",
+            "description": "very very boring",
+            "productId": 1,
+            "languageId": 1
+          }
+        ],
+        "parameters": [
+          {
+            "id": 1,
+            "value": "1000 kg",
+            "parameterTypeId": 1,
+            "productId": 1
+          }
+        ],
+        "price": 2.2,
+        "currency": {
+          "id": 1,
+          "name": "rubles",
+          "multiplier": 10
+        }
+      },
+      "quantity": 10
+    }
+  ],
+  "shipmentDto": {
+    "id": 1,
+    "version": 0,
+    "address": "Moscow, Kremlin"
+  },
+  "paymentDto": {
+    "id": 1,
+    "version": 0,
+    "orderId": 1,
+    "clientId": 1,
+    "currencyId": 1,
+    "value": 10,
+    "cardPan": "cardPan"
+  }
+}

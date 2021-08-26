@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "createdDate": {
+    "epochSecond": 1620643139,
+    "nano": 50000000
+  },
+  "lastModifiedDate": {
+    "epochSecond": 1620643139,
+    "nano": 50000000
+  },
+  "version": 0,
+  "tittle": "table",
+  "description": "boring",
+  "product": {
+    "id": 1,
+    "createdDate": {
+      "epochSecond": 1620643139,
+      "nano": 11000000
+    },
+    "lastModifiedDate": {
+      "epochSecond": 1620643139,
+      "nano": 11000000
+    },
+    "version": 0,
+    "price": 50.1
+  },
+  "language": {
+    "id": 1,
+    "name": null
+  }
+}

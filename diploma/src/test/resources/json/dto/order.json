@@ -1,0 +1,27 @@
+{
+  "id": 1,
+  "version": 0,
+  "clientId": 1,
+  "currencyId": 1,
+  "orderItems": [
+    {
+      "id": 1,
+      "productId": 1,
+      "quantity": 10
+    }
+  ],
+  "shipmentDto": {
+    "id": 1,
+    "version": 0,
+    "address": "Moscow, Kremlin"
+  },
+  "paymentDto": {
+    "id": 1,
+    "version": 0,
+    "orderId": 1,
+    "clientId": null,
+    "currencyId": 1,
+    "value": 200,
+    "cardPan": "cardPan"
+  }
+}

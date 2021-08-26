@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "createdDate": {
+    "epochSecond": 1620643139,
+    "nano": 682000000
+  },
+  "lastModifiedDate": {
+    "epochSecond": 1620643139,
+    "nano": 682000000
+  },
+  "version": 0,
+  "order": {
+    "id": 1,
+    "createdDate": {
+      "epochSecond": 1620643139,
+      "nano": 626000000
+    },
+    "lastModifiedDate": {
+      "epochSecond": 1620643139,
+      "nano": 626000000
+    },
+    "version": 0,
+    "client": {
+      "id": 1,
+      "createdDate": {
+        "epochSecond": 1620643138,
+        "nano": 791000000
+      },
+      "lastModifiedDate": {
+        "epochSecond": 1620643138,
+        "nano": 791000000
+      },
+      "version": 0,
+      "phone": "+7 999 999 99 99",
+      "region": "deep deep"
+    },
+    "currency": {
+      "id": 1,
+      "createdDate": {
+        "epochSecond": 1620643138,
+        "nano": 657000000
+      },
+      "lastModifiedDate": {
+        "epochSecond": 1620643138,
+        "nano": 657000000
+      },
+      "version": 0,
+      "name": "rubles",
+      "multiplier": 2
+    }
+  },
+  "address": "Moscow, Kremlin"
+}

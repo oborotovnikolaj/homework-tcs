@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "createdDate": {
+    "epochSecond": 1620643138,
+    "nano": 791000000
+  },
+  "lastModifiedDate": {
+    "epochSecond": 1620643138,
+    "nano": 791000000
+  },
+  "version": 0,
+  "phone": "+7 999 999 99 99",
+  "region": "deep deep"
+}

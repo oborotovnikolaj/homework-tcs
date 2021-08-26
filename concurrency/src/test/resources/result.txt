@@ -1,0 +1,119 @@
+TEST_SIZE = 10_000_000;
+    Рекурсивная (recursiveQuickSortTest)                                 7742
+    Многопоточная (quickSortThreadTest                                   6883
+    Форк джоин список (forkJoinQuickSortTest)                            4157
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       2785
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 1434
+    Форк джоин массив без параметризации  (mergeSortTest)                1221
+
+    Рекурсивная (recursiveQuickSortTest)                                 7842
+    Многопоточная (quickSortThreadTest                                   6542
+    Форк джоин список (forkJoinQuickSortTest)                            4459
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       2843
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 1399
+    Форк джоин массив без параметризации  (mergeSortTest)                1273
+
+TEST_SIZE = 10_000_00;
+    Рекурсивная (recursiveQuickSortTest)                                 1296
+    Многопоточная (quickSortThreadTest                                   1705
+    Форк джоин список (forkJoinQuickSortTest)                            584
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       1013
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 246
+    Форк джоин массив без параметризации  (mergeSortTest)                322
+
+    Рекурсивная (recursiveQuickSortTest)                                 1246
+    Многопоточная (quickSortThreadTest                                   1283
+    Форк джоин список (forkJoinQuickSortTest)                            579
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       752
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 297
+    Форк джоин массив без параметризации  (mergeSortTest)                180
+
+TEST_SIZE = 10_000_0;
+    Рекурсивная (recursiveQuickSortTest)                                 302
+    Многопоточная (quickSortThreadTest                                   1536
+    Форк джоин список (forkJoinQuickSortTest)                            261
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       409
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 184
+    Форк джоин массив без параметризации  (mergeSortTest)                205
+
+    Рекурсивная (recursiveQuickSortTest)                                 182
+    Многопоточная (quickSortThreadTest                                   919
+    Форк джоин список (forkJoinQuickSortTest)                            191
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       527
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 211
+    Форк джоин массив без параметризации  (mergeSortTest)                136
+
+TEST_SIZE = 10_000;
+    Рекурсивная (recursiveQuickSortTest)                                 65
+    Многопоточная (quickSortThreadTest                                   2057
+    Форк джоин список (forkJoinQuickSortTest)                            41
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       95
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 29
+    Форк джоин массив без параметризации  (mergeSortTest)                78
+
+    Рекурсивная (recursiveQuickSortTest)                                 41
+    Многопоточная (quickSortThreadTest                                   2213
+    Форк джоин список (forkJoinQuickSortTest)                            76
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       89
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 69
+    Форк джоин массив без параметризации  (mergeSortTest)                62
+
+TEST_SIZE = 10_00;
+    Рекурсивная (recursiveQuickSortTest)                                 9
+    Многопоточная (quickSortThreadTest                                   301
+    Форк джоин список (forkJoinQuickSortTest)                            16
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       5
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 4
+    Форк джоин массив без параметризации  (mergeSortTest)                22
+
+    Рекурсивная (recursiveQuickSortTest)                                 16
+    Многопоточная (quickSortThreadTest                                   284
+    Форк джоин список (forkJoinQuickSortTest)                            44
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       14
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 12
+    Форк джоин массив без параметризации  (mergeSortTest)                32
+
+TEST_SIZE = 10_0;
+    Рекурсивная (recursiveQuickSortTest)                                 2
+    Многопоточная (quickSortThreadTest                                   45
+    Форк джоин список (forkJoinQuickSortTest)                            5
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       1
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 4
+    Форк джоин массив без параметризации  (mergeSortTest)                2
+
+    Рекурсивная (recursiveQuickSortTest)                                 1
+    Многопоточная (quickSortThreadTest                                   51
+    Форк джоин список (forkJoinQuickSortTest)                            11
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       4
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 3
+    Форк джоин массив без параметризации  (mergeSortTest)                12
+
+TEST_SIZE = 10;
+    Рекурсивная (recursiveQuickSortTest)                                 0
+    Многопоточная (quickSortThreadTest                                   6
+    Форк джоин список (forkJoinQuickSortTest)                            5
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       3
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 7
+    Форк джоин массив без параметризации  (mergeSortTest)                2
+
+    Рекурсивная (recursiveQuickSortTest)                                 1
+    Многопоточная (quickSortThreadTest                                   4
+    Форк джоин список (forkJoinQuickSortTest)                            6
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       2
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 4
+    Форк джоин массив без параметризации  (mergeSortTest)                2
+
+TEST_SIZE = 10;
+    Рекурсивная (recursiveQuickSortTest)                                 0
+    Многопоточная (quickSortThreadTest                                   0
+    Форк джоин список (forkJoinQuickSortTest)                            3
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       1
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 2
+    Форк джоин массив без параметризации  (mergeSortTest)                2
+
+    Рекурсивная (recursiveQuickSortTest)                                 0
+    Многопоточная (quickSortThreadTest                                   0
+    Форк джоин список (forkJoinQuickSortTest)                            6
+    Форк джоин массив (forkJoinQuickSortArrayTest)                       3
+    Форк джоин массив без параметризации (ForkJoinQuickSortIntArrayTest) 4
+    Форк джоин массив без параметризации  (mergeSortTest)                3

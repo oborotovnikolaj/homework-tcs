@@ -1,0 +1,352 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.10.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="oboro (generated)" id="1621178853966-1">
+        <createTable catalogName="postgres" schemaName="public" tableName="parameter_type">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="parameter_type_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-2">
+        <createTable catalogName="postgres" schemaName="public" tableName="payment">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="cardpan" type="VARCHAR(255)"/>
+            <column name="value" type="numeric(19, 2)"/>
+            <column name="version" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="orders_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-3">
+        <createTable catalogName="postgres" schemaName="public" tableName="parameter">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="parameter_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="VARCHAR(255)"/>
+            <column name="parametertype_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-4">
+        <createTable catalogName="postgres" schemaName="public" tableName="shipment_aud">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="shipment_aud_pkey"/>
+            </column>
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="shipment_aud_pkey"/>
+            </column>
+            <column name="revtype" type="SMALLINT"/>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="orders_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-5">
+        <createTable catalogName="postgres" schemaName="public" tableName="order_item">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="order_item_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="quantity" type="INTEGER"/>
+            <column name="version" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="orders_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-6">
+        <createTable catalogName="postgres" schemaName="public" tableName="currency">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="currency_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="multiplier" type="numeric(19, 2)"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-7">
+        <createTable catalogName="postgres" schemaName="public" tableName="orders_aud">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="orders_aud_pkey"/>
+            </column>
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="orders_aud_pkey"/>
+            </column>
+            <column name="revtype" type="SMALLINT"/>
+            <column name="client_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-8">
+        <createTable catalogName="postgres" schemaName="public" tableName="revinfo">
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="revinfo_pkey"/>
+            </column>
+            <column name="revtstmp" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-9">
+        <createTable catalogName="postgres" schemaName="public" tableName="shipment">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="shipment_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="version" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="orders_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-10">
+        <createTable catalogName="postgres" schemaName="public" tableName="payment_aud">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_aud_pkey"/>
+            </column>
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_aud_pkey"/>
+            </column>
+            <column name="revtype" type="SMALLINT"/>
+            <column name="cardpan" type="VARCHAR(255)"/>
+            <column name="value" type="numeric(19, 2)"/>
+            <column name="orders_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-11">
+        <createTable catalogName="postgres" schemaName="public" tableName="client">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="client_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="region" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-12">
+        <createTable catalogName="postgres" schemaName="public" tableName="currency_aud">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="currency_aud_pkey"/>
+            </column>
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="currency_aud_pkey"/>
+            </column>
+            <column name="revtype" type="SMALLINT"/>
+            <column name="multiplier" type="numeric(19, 2)"/>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-13">
+        <createTable catalogName="postgres" schemaName="public" tableName="order_item_aud">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="order_item_aud_pkey"/>
+            </column>
+            <column name="rev" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="order_item_aud_pkey"/>
+            </column>
+            <column name="revtype" type="SMALLINT"/>
+            <column name="quantity" type="INTEGER"/>
+            <column name="orders_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-14">
+        <createTable catalogName="postgres" schemaName="public" tableName="orders">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="orders_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="version" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="client_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-16">
+        <createTable catalogName="postgres" schemaName="public" tableName="product">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="product_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="numeric(19, 2)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-17">
+        <createTable catalogName="postgres" schemaName="public" tableName="language">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="language_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-18">
+        <createTable catalogName="postgres" schemaName="public" tableName="info">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="info_pkey"/>
+            </column>
+            <column name="created_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified_date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="tittle" type="VARCHAR(255)"/>
+            <column name="language_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-19">
+        <addUniqueConstraint catalogName="postgres" columnNames="orders_id" constraintName="uk_7rads77dxj3khk2fxah4fnvtl" schemaName="public" tableName="payment"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-20">
+        <addForeignKeyConstraint baseColumnNames="parametertype_id" baseTableCatalogName="postgres" baseTableName="parameter" baseTableSchemaName="public" constraintName="FKnltkp275sdys6d0pax5lnb4o" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="parameter_type" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-21">
+        <addUniqueConstraint catalogName="postgres" columnNames="orders_id" constraintName="uk_l7w2v8oho8j52dk3w6gbkug6u" schemaName="public" tableName="shipment"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-22">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableCatalogName="postgres" baseTableName="payment_aud" baseTableSchemaName="public" constraintName="FK2uiqhh93iu0u9vu4kmqvia63e" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableCatalogName="postgres" referencedTableName="revinfo" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-23">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableCatalogName="postgres" baseTableName="order_item_aud" baseTableSchemaName="public" constraintName="FKphkod6su0bmakxnfndq4q6buh" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableCatalogName="postgres" referencedTableName="revinfo" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-24">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableCatalogName="postgres" baseTableName="info" baseTableSchemaName="public" constraintName="FK2cofu9xugjg3chwyqi1rq2qsw" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="product" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-25">
+        <addForeignKeyConstraint baseColumnNames="language_id" baseTableCatalogName="postgres" baseTableName="info" baseTableSchemaName="public" constraintName="FKc9r3tuig31n3etnfku55y8lay" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="language" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-26">
+        <addForeignKeyConstraint baseColumnNames="orders_id" baseTableCatalogName="postgres" baseTableName="payment" baseTableSchemaName="public" constraintName="FKap5t4f2dfscrwfnewnalgxv7x" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="orders" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-27">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableCatalogName="postgres" baseTableName="parameter" baseTableSchemaName="public" constraintName="FKe24x9j8w8kkg3ib41xxjwv5w0" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="product" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-28">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableCatalogName="postgres" baseTableName="shipment_aud" baseTableSchemaName="public" constraintName="FKhvcd9pm5gpv5qmewwns7p009h" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableCatalogName="postgres" referencedTableName="revinfo" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-29">
+        <addForeignKeyConstraint baseColumnNames="orders_id" baseTableCatalogName="postgres" baseTableName="order_item" baseTableSchemaName="public" constraintName="FKb0jd6xeqjlre2lxcs2wtih7j9" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="orders" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-30">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableCatalogName="postgres" baseTableName="order_item" baseTableSchemaName="public" constraintName="FKsxgfmcie6oo67uxtk9hqk02mq" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="product" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-31">
+        <addForeignKeyConstraint baseColumnNames="rev" baseTableCatalogName="postgres" baseTableName="orders_aud" baseTableSchemaName="public" constraintName="FK273e3r0jdefakn4ludknbsphx" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="rev" referencedTableCatalogName="postgres" referencedTableName="revinfo" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-32">
+        <addForeignKeyConstraint baseColumnNames="orders_id" baseTableCatalogName="postgres" baseTableName="shipment" baseTableSchemaName="public" constraintName="FKioewm2hrkekfqhj5ieoatscqj" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="orders" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-33">
+        <addForeignKeyConstraint baseColumnNames="client_id" baseTableCatalogName="postgres" baseTableName="orders" baseTableSchemaName="public" constraintName="FKjicigc2rpd2ypm7t4n4k5vyyb" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableCatalogName="postgres" referencedTableName="client" referencedTableSchemaName="public" validate="true"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-34">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="client_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-35">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="currency_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-36">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="1" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="hibernate_sequence" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-37">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="info_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-38">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="language_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-39">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="order_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-40">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="orderitem_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-41">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="parameter_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-42">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="parametertype_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-43">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="payment_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-44">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="product_id_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="oboro (generated)" id="1621178853966-45">
+        <createSequence cacheSize="1" catalogName="postgres" cycle="false" dataType="bigint" incrementBy="10" maxValue="9223372036854775807" minValue="1" schemaName="public" sequenceName="shipment_id_seq" startValue="1"/>
+    </changeSet>
+</databaseChangeLog>

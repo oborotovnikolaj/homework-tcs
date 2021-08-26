@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "orderId": 1,
+  "clientId": null,
+  "currencyId": 1,
+  "value": 200,
+  "cardPan": "cardPan"
+}

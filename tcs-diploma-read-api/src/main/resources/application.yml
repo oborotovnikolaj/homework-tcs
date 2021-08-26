@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: READ_API
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+server:
+  port: 8005

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/collections-generics/collections-generics.iml" filepath="$PROJECT_DIR$/collections-generics/collections-generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrency/concurrency.iml" filepath="$PROJECT_DIR$/concurrency/concurrency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/diploma/diploma.iml" filepath="$PROJECT_DIR$/diploma/diploma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework.iml" filepath="$PROJECT_DIR$/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-timed-starter/spring-boot-timed-starter.iml" filepath="$PROJECT_DIR$/spring-boot-timed-starter/spring-boot-timed-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core/spring-core.iml" filepath="$PROJECT_DIR$/spring-core/spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-data/spring-data.iml" filepath="$PROJECT_DIR$/spring-data/spring-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-web/spring-web.iml" filepath="$PROJECT_DIR$/spring-web/spring-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-webflux/spring-webflux.iml" filepath="$PROJECT_DIR$/spring-webflux/spring-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tcs-diploma-read-api/tcs-diploma-read-api.iml" filepath="$PROJECT_DIR$/tcs-diploma-read-api/tcs-diploma-read-api.iml" />
+    </modules>
+  </component>
+</project>

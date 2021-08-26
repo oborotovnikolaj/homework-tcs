@@ -1,0 +1,38 @@
+version: "3.4"
+
+services:
+  pgAdmin:
+    restart: always
+    image: dpage/pgadmin4
+    ports:
+      - "8000:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 1234@admin.com
+      PGADMIN_DEFAULT_PASSWORD: 1234
+  #    volumes:
+  #      - pgadmin_tcs:/var/lib/pgadmin
+  postgres:
+    restart: always
+    image: postgres
+    container_name: "postgres_container"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: me
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: testDb
+  postgres_empty:
+    restart: always
+    image: postgres
+    container_name: "postgres_empty"
+    ports:
+      - "6432:5432"
+    environment:
+      POSTGRES_USER: me
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: testDb
+#    volumes:
+#      - pgvol_tcs:/var/lib/postgresql/data
+#volumes:
+#  pgvol_tcs:
+#  pgadmin_tcs:

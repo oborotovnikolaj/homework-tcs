@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "infos": [
+    {
+      "id": 1,
+      "tittle": "table",
+      "description": "boring",
+      "productId": 1,
+      "languageId": 1
+    }
+  ],
+  "parameters": [
+    {
+      "id": 1,
+      "value": "1000 tons",
+      "parameterTypeId": 1,
+      "productId": 1
+    }
+  ],
+  "price": 100.2,
+  "currencyId": 1
+}
